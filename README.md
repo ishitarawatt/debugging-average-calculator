@@ -1,13 +1,24 @@
-# debugging-average-calculator
-# Question 2: Debugging an Average Calculation Program
+# 🐞 Debugging an Average Calculator (Java)
 
-## Problem
-A program calculates average incorrectly.
+> **Question 2:** A program calculates an average incorrectly. Find and fix the bug.
 
-## Common Issues Checked
-1. Integer division
-2. Loop logic errors
-3. Incorrect divisor
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 
-## Solution
-Use correct data types and logic.
+## Common causes checked
+
+| Issue | Why it breaks the average |
+|---|---|
+| **Integer division** | `7 / 2` gives `3`, not `3.5` |
+| **Loop logic errors** | Values skipped or counted twice |
+| **Wrong divisor** | Dividing by the wrong count |
+
+## Fix
+
+Use the **correct data types** (floating point for the result) and make sure the loop and divisor match the number of values.
+
+## Run
+
+```bash
+javac AverageCalculator.java
+java AverageCalculator
+```
